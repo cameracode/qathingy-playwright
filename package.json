@@ -1,0 +1,23 @@
+{
+  "name": "qathingy-playwright",
+  "version": "1.0.0",
+  "description": "Automated software testing with Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameracode/qathingy-playwright.git"
+  },
+  "author": "Eben A. Yep",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cameracode/qathingy-playwright/issues"
+  },
+  "homepage": "https://github.com/cameracode/qathingy-playwright#readme",
+  "dependencies": {
+    "@playwright/test": "^1.21.0",
+    "prettier": "^2.6.2"
+  }
+}
