@@ -42,5 +42,6 @@ test("Working with inputs", async ({ page }) => {
     await page.type('#user_password', 'some password')
     await page.click('text=Sign in')
 
-    await page.locator('.alert').locator('alert-error', { hasText: 'Login and/or password are wrong.'})
+    const errorMessage = await page.locator('alert-error')
+    await expect(errorMessage).toContainText('Login and/or password are wrong.')
 })
