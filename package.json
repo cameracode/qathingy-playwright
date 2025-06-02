@@ -1,23 +1,31 @@
 {
   "name": "qathingy-playwright",
-  "version": "1.0.0",
-  "description": "Automated software testing with TypeScript/Playwright",
+  "version": "0.0.2",
+  "description": "Automated software testing with Playwright",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cameracode/qathingy-playwright.git"
+    "url": "git+https://github.com/cameracode/qa-automation-playwright.git"
   },
   "author": "Alexandria Yep",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cameracode/qathingy-playwright/issues"
+    "url": "https://github.com/cameracode/qa-automation-playwright/issues"
   },
-  "homepage": "https://github.com/cameracode/qathingy-playwright#readme",
-  "dependencies": {
-    "@playwright/test": "^1.21.0",
+  "homepage": "https://github.com/cameracode/qa-automation-playwright#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.11.30",
     "prettier": "^2.6.2"
   }
 }

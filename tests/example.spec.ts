@@ -7,12 +7,13 @@ test("Simple basic test", async ({ page }) => {
 })
 
 test("Clicking on Elements", async ({ page }) => {
-    await page.goto("http://zero.webappsecurity.com/index.html");
-    await page.click("#signin_button");
-    await page.click('text=Sign in');
+    await page.goto("https://the-internet.herokuapp.com/login");
+    await page.fill('#username', 'invalid');
+    await page.fill('#password', 'invalid');
+    await page.click('button[type="submit"]');
 
-    const errorMessage = await page.locator('.alert-error');
-    await expect(errorMessage).toContainText("Login and/or password are wrong.")
+    const errorMessage = await page.locator('#flash');
+    await expect(errorMessage).toContainText("Your username is invalid!");
 })
 
 // test("Selectors", async ({ page }) => {
@@ -42,6 +43,6 @@ test("Working with inputs", async ({ page }) => {
     await page.type('#user_password', 'some password')
     await page.click('text=Sign in')
 
-    const errorMessage = await page.locator('alert-error')
+    const errorMessage = await page.locator('.alert-error')
     await expect(errorMessage).toContainText('Login and/or password are wrong.')
 })
