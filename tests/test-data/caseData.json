@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Testing SomeProduct1",
+        "endpoint": "https://the-internet.herokuapp.com/",
+        "productItem": "SomeProduct1"
+    },
+    {
+        "name": "Testing SomeProduct2",
+        "endpoint": "https://the-internet.herokuapp.com/",
+        "productItem": "SomeProduct2"
+    },
+    {
+        "name": "Testing SomeProduct3",
+        "endpoint": "https://the-internet.herokuapp.com/",
+        "productItem": "SomeProduct3"
+    },
+    {
+        "name": "Testing SomeProduct4",
+        "endpoint": "https://the-internet.herokuapp.com/",
+        "productItem": "SomeProduct4"
+    },
+    {
+        "name": "Testing SomeProduct5",
+        "endpoint": "https://the-internet.herokuapp.com/",
+        "productItem": "SomeProduct5"
+    },
+    {
+        "name": "Testing SomeProduct6",
+        "endpoint": "https://the-internet.herokuapp.com/",
+        "productItem": "SomeProduct6"
+    },
+    {
+        "name": "Testing SomeProduct7",
+        "endpoint": "https://the-internet.herokuapp.com/",
+        "productItem": "SomeProduct7"
+    }
+] 
